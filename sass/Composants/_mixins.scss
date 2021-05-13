@@ -1,0 +1,63 @@
+//*mixins pour mobile//*
+@mixin media-query($width) {
+    @media screen and (max-width: $width) { @content; }
+}
+
+@mixin icone21-m($c-icone: icone2($c-primaire)) {
+    color: $c-icone;
+}
+
+@mixin new-m($colour:$c-tertiaire) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darken($colour, 40%);
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: $colour;
+    content: "";
+    width: 80px;
+    height: 30px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 210px;
+    left: 66vw;
+}
+
+@mixin cadre-menu-m {
+    cursor: pointer;
+    height: 250px;
+    width: 89.3vw;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.1);
+    margin-bottom: 5vw;
+    align-self: center;
+    position: relative;
+}
+
+@mixin  img-menu-m {
+    height: 175px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+@mixin titre-menu-m {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    left: 3vw;
+    bottom: 40px;
+}
+
+@mixin span-menu-m {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    bottom: 15px;
+    left: 3vw;
+}

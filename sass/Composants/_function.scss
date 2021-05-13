@@ -1,0 +1,7 @@
+@function icone2($c-primaire) {
+    @if ( lightness($c-primaire) < 65%) {
+        @return lighten(black, 50%);
+    }@else{
+        @return lighten($c-primaire, 0);
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style.css" />
+    <link rel="stylesheet" href="assets/Fontawesome/css/all.css">
+    <title>OhMyFood</title>
+</head>
+<body>
+    <div class="loader">
+        <div class="loader__spinner"></div>
+    </div>
+    <div id="corps">
+        <h1>
+            <img src="assets/images/logo/ohmyfood.png" alt="Oh My Food">
+        </h1>
+        <form method="post" action="traitement.php">
+            <fieldset>
+                <div id="search-block">
+                    <label for="search"><i class="fas fa-map-marker-alt icone"></i></label> <input type="search" name="search-bar" id="search" placeholder="Paris, Belleville" maxlength="20" size="20" autofocus required />
+                    <div class="reserve">
+                        <p class="titre-reserve">Réservez le menu qui vous convient</p>
+                        <p class="reserve-resume">Découvrez des restaurants d'exception, selectionnés par nos soins.</p>
+                    </div>
+                    <div class="cadre-bouton">
+                        <input type="submit" value="Explorer nos restaurants" id="bouton" />
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <div id="fonctionnement">
+            <h2>Fonctionnement</h2>
+            <div class="choisir">
+                <a class="numero">1</a>
+                <i class="fas fa-mobile-alt icone2"></i>
+                <a class="descriptif">Choisissez un restaurant</a>
+            </div>
+            <div class="composer">
+                <a class="numero">2</a>
+                <i class="fas fa-list icone2"></i>
+                <a class="descriptif">Composez votre menu</a>
+            </div>
+            <div class="deguster">
+                <a class="numero">3</a>
+                <i class="fas fa-store icone2"></i>
+                <a class="descriptif">Dégustez au restaurant</a>
+            </div>
+        </div>
+        <div id="restaurants">
+            <h2>Restaurants</h2>
+            <div class="palette">
+                <a href="./html/palette-du-gout.html">
+                    <img src="./assets/images/restaurants/palette-du-gout-m.jpg" alt="la palette du goût">
+                    <h3>La palette du goût</h3>
+                    <span>Ménilmontant</span>
+                    <div class="nouveau">Nouveau</div>
+                </a>
+                <i class="far fa-heart coeur"></i>
+            </div>
+            <div class="note">
+                <a href="./html/note-enchantee.html">
+                    <img src="./assets/images/restaurants/note-enchantee-m.jpg" alt="la note enchantée">
+                    <h3>La note enchantée</h3>
+                    <span>Charonne</span>
+                    <div class="nouveau">Nouveau</div>
+                </a>
+                <i class="far fa-heart coeur"></i>
+            </div>
+            <div class="francaise">
+                <a href="./html/la-francaise.html">
+                    <img src="./assets/images/restaurants/la-francaise-m.jpg" alt="À la française">
+                    <h3>À la française</h3>
+                    <span>Cité Rouge</span>
+                </a>
+                <i class="far fa-heart coeur"></i>
+            </div>
+            <div class="delice">
+                <a href="./html/delice-des-sens.html">
+                    <img src="./assets/images/restaurants/delice-des-sens-m.jpg" alt="Le délice des sens">
+                    <h3>Le délice des sens</h3>
+                    <span>Folie-Méricourt</span>
+                </a>
+                <i class="far fa-heart coeur"></i>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="img-footer">
+                <img src="./assets/images/logo/ohmyfood2wh.png" alt="OhMyFood">
+            </div>
+            <a class="proposer" href="">
+                <i class="fas fa-utensils icone-footer"></i>
+                <span class="p-restaurant">Proposer un restaurant</span>
+            </a>
+            <a class="partenaire" href="">
+                <i class="fas fa-hands-helping"></i>
+                <span class="d-partenaire">Devenir partenaire</span>
+            </a>
+            <a class="legale" href="">Mention légales</a>
+            <a class="contact" href="mailto:contact-omf-paris@omf.com">Contact</a>
+        </div>
+    </div>
+</body>
+</html>
