@@ -1,4 +1,3 @@
-//*mixins pour mobile//*
 @mixin media-query($width) {
     @media screen and (max-width: $width) { @content; }
 }
