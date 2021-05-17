@@ -1,0 +1,36 @@
+.entrees-resto {
+    animation: defilement 500ms 2.8s;
+    animation-fill-mode: both;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-bottom: 0px;
+    width: auto;
+    position: relative;
+    }
+.principal-resto {
+    animation: defilement 500ms 3s;
+    animation-fill-mode: both;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-bottom: 0px;
+    width: auto;
+    position: relative;
+    }
+.dessert-resto {
+    animation: defilement 500ms 3.2s;
+    animation-fill-mode: both;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-bottom: 0px;
+    width: auto;
+    position: relative;
+    }

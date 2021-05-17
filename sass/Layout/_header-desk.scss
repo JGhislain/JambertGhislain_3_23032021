@@ -1,0 +1,14 @@
+header {
+    height: 6vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+h1 img {
+    width: 20vw;
+    object-fit: contain;
+}

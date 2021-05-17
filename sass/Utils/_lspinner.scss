@@ -1,0 +1,44 @@
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: loader 3s linear forwards;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    &__spinner {
+        font-size: 10px;
+        margin: 50px auto;
+        width: 11em;
+        height: 11em;
+        border-radius: 50%;
+        background: linear-gradient(to right, $c-primaire 10%, rgba(147,86,220,0)42%) ;
+        position: relative;
+        animation: spinner $spinner-dur $spinner-delay infinite linear;
+    }
+    &__spinner::before {
+        width: 50%;
+        height: 50%;
+        background: $c-primaire;
+        border-radius: 100% 0 0 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+    }
+    &__spinner::after {
+        background: #FFFFFF;
+        width: 75%;
+        height: 75%;
+        border-radius: 50%;
+        content: "";
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+}

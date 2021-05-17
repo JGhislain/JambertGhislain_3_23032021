@@ -1,0 +1,17 @@
+.palette, .note, .francaise, .delice  {
+    @include cadre-menu-m;
+    height: 300px;
+    width: 350px;
+    & img {
+        @include img-menu-m;
+        height: 215px;
+    }
+    & h3 {
+        @include titre-menu-m;
+        bottom: 45px;
+    }
+    & span {
+        @include span-menu-m;
+        bottom: 25px;
+    }
+}

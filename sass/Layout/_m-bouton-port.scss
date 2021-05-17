@@ -1,0 +1,21 @@
+.cadre-bouton {
+    text-align: center;
+    margin-top: 15vw;
+}
+#bouton {
+    background: linear-gradient(172deg,$c-secondaire 1%, $c-primaire 100%);
+    border-radius: 68px;
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.3);
+    border-style: none;
+    height: 45px;
+    width: 185px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    &:hover {
+        transition: 200ms ease-in-out;
+        background: linear-gradient(172deg,$c-secondaire 1%, $c-primaire 100%);
+        box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.8);
+        filter: brightness(110%);
+    }
+}

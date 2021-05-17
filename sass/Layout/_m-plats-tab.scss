@@ -1,0 +1,99 @@
+.titre {
+    font-weight: lighter;
+    width: 100%;
+    padding-left: 2vw;
+    margin-top: 25px;
+}
+.ligne {
+    height: 5px;
+    width: 35px;
+    border-bottom: solid $c-tertiaire 3px;
+    margin-right: 32vw;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: initial;
+}
+.plats {
+    animation: defilement 500ms 3.2s;
+    animation-fill-mode: both;
+    height: 70px;
+    width: 100%;
+    margin-top: 15px;
+    border: solid white 0px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 3vw;
+    box-sizing: content-box;
+    & .nom-plat {
+        font-weight: bold;
+        font-size: 1.1rem;
+        width: 80%;
+        padding-top: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    & .description-plat {
+        width: 80%;
+        font-size: 0.9rem;
+        padding-bottom: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        opacity: 70%;
+    }
+    & .prix-plat {
+        font-weight: bold;
+        padding-top: 25px;
+        position: absolute;
+        right: 6vw;
+        top: auto;
+        transform: translateX(30px);
+        transition: 500ms ease-in-out;
+    }
+}
+.confirmation {
+    width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    position: absolute;
+    right: 5vw;
+    top: auto;
+    font-size: 1.2rem;
+    background-color: $c-tertiaire;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    opacity: 0;
+    transform: translateX(5vw);
+    transition: 500ms ease-in-out;
+    z-index: -1;
+}
+.confirmation i {
+    color: white;
+}
+.plats:hover .confirmation {
+    transform: translateX(5vw);
+    width: 13%;
+    opacity: 1;
+    z-index: 1;
+    & i {
+        color: white;
+        animation: spinner;
+        animation-duration: 0.7s;
+        animation-iteration-count: 1;
+    }
+}
+.plats:hover .prix-plat {
+    transform: translateX(0px);
+}
+.plats:hover .nom-plat {
+    animation: size 500ms both;
+}
+.plats:hover .description-plat {
+    animation: size 500ms both;
+}

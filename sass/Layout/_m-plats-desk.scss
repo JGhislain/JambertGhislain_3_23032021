@@ -1,0 +1,97 @@
+.titre {
+    font-weight: lighter;
+    width: 100%;
+    padding-left: 2vw;
+    margin-top: 25px;
+}
+.ligne {
+    height: 1vw;
+    width: 35px;
+    border-bottom: solid $c-tertiaire 3px;
+    top: 40px;
+    position: absolute;
+    left: 2vw;
+}
+.plats {
+animation: defilement 500ms 3.2s;
+animation-fill-mode: both;
+height: 70px;
+width: 30%;
+margin-top: 40px;
+border: solid white 0px;
+background-color: white;
+border-radius: 20px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+padding-left: 15px;
+box-sizing: content-box;
+& .nom-plat {
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-top: 10px;
+}
+& .description-plat {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+    opacity: 70%;
+}
+& .prix-plat {
+    position: absolute;
+    right: 3vw;
+    top: 38px;
+    font-weight: bold;
+    transform: translateX(30px);
+    transition: 500ms ease-in-out;
+}
+}
+.confirmation {
+    width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    position: absolute;
+    right: 4vw;
+    top: 0;
+    font-size: 1.2rem;
+    background-color: $c-tertiaire;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    opacity: 0;
+    transform: translateX(4vw);
+    transition: 500ms ease-in-out;
+    z-index: -1;
+}
+.confirmation i {
+    color: white;
+}
+.plats:hover .confirmation {
+    transform: translateX(4vw);
+    width: 13%;
+    opacity: 1;
+    z-index: 1;
+    & i {
+        color: white;
+        animation: spinner;
+        animation-duration: 0.7s;
+        animation-iteration-count: 1;
+    }
+}
+.plats:hover .prix-plat {
+    transform: translateX(0px);
+}
+.plats:hover .nom-plat {
+    animation: size 500ms both;
+}
+.plats:hover .description-plat {
+    animation: size 500ms both;
+}

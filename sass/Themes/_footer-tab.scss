@@ -1,0 +1,36 @@
+#footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    background-color: darken($c-grey, 76.2%);
+    padding-top: 0;
+}
+    .img-footer {
+        margin-bottom: 2vw;
+        & img {
+            height: 9vw;
+            width: 23vw;
+            object-fit: contain;
+            margin-left: 5vw;
+        }
+    }
+    .proposer, .partenaire, .legale, .contact {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        padding-bottom: 2vw;
+        & i {
+            position: fixed;
+            left: 5vw;
+            font-size: 1rem;
+        }
+        & span {
+            margin-left: 11vw;
+            font-size: 1rem;
+        }
+    }
+    .legale, .contact {
+        margin-left: 5vw;
+    }

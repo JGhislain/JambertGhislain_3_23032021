@@ -1,0 +1,12 @@
+#image-resto {
+    height: auto;
+    width: 49%;
+    margin-top: 30px;
+    margin-left: auto;
+    & img {
+        height: 700px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+        }
+    }

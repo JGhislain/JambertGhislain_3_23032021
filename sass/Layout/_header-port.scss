@@ -1,0 +1,16 @@
+header {
+    height: 13vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    padding-top: 0;
+}
+h1 img {
+    height: 7vw;
+    width: 40vw;
+    object-fit: contain;
+    padding-top: 3vw;
+}

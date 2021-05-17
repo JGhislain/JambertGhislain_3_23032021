@@ -1,0 +1,9 @@
+#corps {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    animation: transition 400ms $transition-delay;
+    animation-fill-mode: both;
+    margin: 0;
+}

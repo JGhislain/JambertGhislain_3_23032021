@@ -1,0 +1,33 @@
+.entrees-resto {
+    animation: defilement 500ms 2.8s;
+    animation-fill-mode: both;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    width: 100%;
+    position: relative;
+}
+.principal-resto {
+    animation: defilement 500ms 3s;
+    animation-fill-mode: both;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    width: 100%;
+    position: relative;
+}
+.dessert-resto {
+    animation: defilement 500ms 3.2s;
+    animation-fill-mode: both;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    width: 100%;
+    position: relative;
+}

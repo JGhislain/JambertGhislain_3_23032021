@@ -1,0 +1,17 @@
+#restaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100vw;
+    background-color: $c-grey;
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+    margin-top: -3vw;
+    & h2 {
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 5vw;
+        margin-left: 3vw;
+        }
+    }

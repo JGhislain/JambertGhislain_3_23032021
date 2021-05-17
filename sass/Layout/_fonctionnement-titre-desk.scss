@@ -1,0 +1,13 @@
+#fonctionnement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+    & h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        width: 100vw;
+        margin-left: 1vw;
+    }
+}

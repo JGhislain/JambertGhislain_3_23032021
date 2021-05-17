@@ -1,0 +1,16 @@
+#restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100vw;
+    background-color: $c-grey;
+    padding-bottom: 50px;
+    padding-top: 55px;
+    margin-top: 55px;
+    & h2 {
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 5vw;
+        padding-left: 3vw;
+        }
+    }

@@ -1,0 +1,15 @@
+#fonctionnement {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100vw;
+    margin-top: 0px;
+    position: initial;
+    & h2 {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-left: 5vw;
+        margin-bottom: 20px;
+        }
+    }

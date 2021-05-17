@@ -1,0 +1,36 @@
+.choisir, .composer, .deguster {
+    background-color: $c-grey;
+    border-radius: 25px;
+    height: 75px;
+    width: 90vw;
+    margin-bottom: 5vw;
+    position: relative;
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.1);
+    &:hover {
+        background-color: lighten($color: $c-primaire, $amount: 35);
+    }
+    &:hover .icone2 {
+        color: $c-primaire;
+    }
+}
+    .numero {
+        background-color: $c-primaire;
+        border-radius: 100%;
+        border: 5px solid $c-primaire;
+        font-size: 0.8rem;
+        color: white;
+        height: 15px;
+        width: 15px;
+        position: absolute;
+        right: 86vw;
+    }
+    .icone2 {
+        @include icone21-m;
+        position: absolute;
+        left: 35px;
+        font-size: 1.2rem;
+    }
+    .descriptif {
+        font-weight: bold;
+        font-size: 1rem;
+    }
