@@ -69,7 +69,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: loader 3s linear forwards;
+  animation: loader 2600ms linear forwards;
   position: fixed;
   top: 0;
   bottom: 0;
