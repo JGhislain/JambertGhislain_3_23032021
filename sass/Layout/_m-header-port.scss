@@ -1,24 +1,14 @@
 #tete {
     width: 100%;
-    height: auto;
+    height: 13vw;
     position: relative;
-    margin-top: 1vw;
-    & h1 {
-        height: 7vw;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        margin: 0;
-        margin-bottom: 2vw;
-        & img {
-            height: 7vw;
-            width: 40vw;
-            object-fit: contain;
-            padding-top: 0vw;
-            }
-        }
+    h1 {
+        font-size: 1.7rem;
+        color: black;
+        font-family: "Shrikhand", cursive;
+        font-weight: bold;
+        padding-top: 1vw;
+    }
     & a {
         position: absolute;
         top: 3vw;

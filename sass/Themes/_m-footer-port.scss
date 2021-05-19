@@ -10,31 +10,32 @@
     position: relative;
     top: 0;
 }
-    .img-footer {
-        margin-bottom: 2vw;
-        & img {
-            height: 9vw;
-            width: 23vw;
-            object-fit: contain;
-            margin-left: 5vw;
-        }
+h4 {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-left: 5vw;
+    font-size: 1rem;
+    color: white;
+    font-family: "Shrikhand", cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.proposer, .partenaire, .legale, .contact {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    padding-bottom: 2vw;
+    position: relative;
+    & i {
+        position: absolute;
+        left: 5vw;
+        font-size: 1rem;
     }
-    .proposer, .partenaire, .legale, .contact {
-        text-decoration: none;
-        color: white;
+    & span {
+        margin-left: 11vw;
         font-size: 0.9rem;
-        padding-bottom: 2vw;
-        position: relative;
-        & i {
-            position: absolute;
-            left: 5vw;
-            font-size: 1rem;
-        }
-        & span {
-            margin-left: 11vw;
-            font-size: 0.9rem;
-        }
     }
-    .legale, .contact {
-        margin-left: 5vw;
-    }
+}
+.legale, .contact {
+    margin-left: 5vw;
+}
