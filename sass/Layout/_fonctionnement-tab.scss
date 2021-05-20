@@ -13,27 +13,27 @@
         color: $c-primaire;
     }
 }
-    .numero {
-        background-color: $c-primaire;
-        border-radius: 100%;
-        border: 5px solid $c-primaire;
-        font-size: 0.8rem;
-        color: white;
-        height: 25px;
-        width: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        right: 37.5vw;
-    }
-    .icone2 {
-        @include icone21-m;
-        position: absolute;
-        left: 5vw;
-        font-size: 1.3rem;
-    }
-    .descriptif {
-        font-weight: bold;
-        font-size: 1rem;
-    }
+.numero {
+    background-color: $c-primaire;
+    border-radius: 100%;
+    border: 5px solid $c-primaire;
+    font-size: 0.8rem;
+    color: white;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 37.5vw;
+}
+.icone2 {
+    @include icone21-m;
+    position: absolute;
+    left: 5vw;
+    font-size: 1.3rem;
+}
+.descriptif {
+    font-weight: bold;
+    font-size: 1rem;
+}
